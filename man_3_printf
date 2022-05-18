@@ -21,6 +21,7 @@ The function is equivalent to printf() function as provided in the stdio.h libra
 .SH Format of the format string
 The format string is a character string, enclosed within a double quote with a percentage
 symbol directly before the string.
+
 The format string comprises of 0 or more instructions: characters that are copied in their
  original state to the output stream and conversion specifiers, and they each result to
 processing zero or more subsequent argument. Each of these conversion specification is
@@ -87,7 +88,7 @@ No known bugs at the time of this documentation.
 
 /*declare an integer length to hold the return value of _printf*/
 .br
-int len;
+	int len;
 .br
 
 /*Assign a value to the variable length*/
@@ -116,3 +117,4 @@ int len;
 .B  HENDRIXX JOSHUA
 
 .B OJO ABIODUN
+

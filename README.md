@@ -1,3 +1,40 @@
+Requirements
+General
+Allowed editors: vi, vim, emacs
+All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+All your files should end with a new line
+A README.md file, at the root of the folder of the project is mandatory
+Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+You are not allowed to use global variables
+No more than 5 functions per file
+In the following examples, the main.c files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own main.c files at compilation. Our main.c files might be different from the one shown in the examples
+The prototypes of all your functions should be included in your header file called main.h
+Don’t forget to push your header file
+All your header files should be include guarded
+Note that we will not provide the _putchar function for this project
+
+
+Authorized functions and macros
+
+write (man 2 write)
+malloc (man 3 malloc)
+free (man 3 free)
+  va_start (man 3 va_start)
+  va_end (man 3 va_end)
+  va_copy (man 3 va_copy)
+  va_arg (man 3 va_arg)
+
+Compilation
+
+Your code will be compiled this way:
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c
+
+As a consequence, be careful not to push any c file containing a main function in the root directory of your project (you could have a test folder containing all your tests files including main functions)
+Our main files will include your main header file (main.h): #include main.h
+You might want to look at the gcc flag -Wno-format when testing with your _printf and the standard printf
+
+
+
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life
 
 mandatory
@@ -42,25 +79,7 @@ You don’t have to handle the length modifiers
 
 Handle the following custom conversion specifiers:
 
- b: the unsigned int argument is converted to binary
-alex@ubuntu:~/c/printf$ cat main.c
-#include "main.h"
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
-int main(void)
-{
-    _printf("%b\n", 98);
-    return (0);
-}
-alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
-alex@ubuntu:~/c/printf$ ./a.out
-1100010
-alex@ubuntu:~/c/printf$
-
+ b: the unsigned int argument is converted to binar
 
 3. What one has not experienced, one will never understand in print
 
@@ -176,10 +195,7 @@ Handle the following custom conversion specifier:
 
 R: prints the rot13'ed string
 
+AUTHOURS
 
-15. *
-
-#advanced
-
-All the above options work well together.
-😇👌
+hendrixxD
+ojogiggs
